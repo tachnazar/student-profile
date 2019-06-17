@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active:
+      - dbDao
+      - inMemoryDB
+  servlet:
+    multipart:
+      max-file-size: 10MB
+amazonProperties:
+  endpointUrl: https://s3.ap-southeast-1.amazonaws.com
+  accessKey:  AKIAIXCQ72GHDCHXQE7A
+  secretKey: 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
+  bucketName: se331-2018-lab10
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
